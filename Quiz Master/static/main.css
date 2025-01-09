@@ -1,0 +1,299 @@
+/* Global Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e5e7eb; /* Soft light background */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #10b981; /* Highlight on hover */
+}
+
+h4 {
+  color: #1f2937;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #3b82f6; /* Lively blue background */
+  padding: 1rem 2rem;
+  color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.navbar .navbar-brand:hover {
+  color: #f43f5e; /* Color change on hover */
+}
+
+.navbar .nav-link {
+  font-weight: 600;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+}
+
+.navbar .nav-link:hover {
+  color: #ffffff;
+  background-color: #2563eb; /* Darker blue on hover */
+}
+
+.navbar .form-control {
+  border-radius: 25px;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+}
+
+.navbar .btn-outline-success {
+  border-radius: 25px;
+}
+
+/* Main Content */
+main {
+  padding: 30px 15px;
+  max-width: 1650px;
+  margin: 0 auto;
+  background-color: #b7c6de; /* White background for content */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow around main */
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around; /* Center content horizontally */
+}
+
+.col {
+  flex: 1;
+  min-width: 850px;
+  max-width: calc(33% - 20px);
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.col:hover {
+  transform: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Same shadow on hover */
+}
+
+.col h4 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #1f2937;
+  font-weight: bold;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  text-align: center;
+  padding: 15px;
+  font-size: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+table th {
+  background-color: #3b82f6;
+  color: #fff;
+  font-weight: 700;
+}
+
+table td {
+  background-color: #ffffff;
+}
+
+table td a {
+  margin-right: 10px;
+  color: #10b981;
+  font-size: 1.2rem;
+}
+
+table td a:hover {
+  color: #f43f5e;
+}
+
+table td a:last-child {
+  color: #ef4444;
+}
+
+/* Modal Styling */
+.modal-content {
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.modal-header {
+  border-bottom: 2px solid #e2e8f0;
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.modal-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.modal-body {
+  padding-top: 20px;
+}
+
+.modal-footer {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.modal-footer button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+}
+
+.modal-footer .btn-primary {
+  background-color: #10b981;
+  border: none;
+}
+
+.modal-footer .btn-primary:hover {
+  background-color: #2563eb; /* Bright blue on hover */
+}
+
+.modal-backdrop {
+  z-index: 1040; /* Ensure backdrop is beneath the modal */
+}
+
+/* Buttons */
+.btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-danger {
+  background-color: #ef4444; /* Bright red */
+  color: #ffffff;
+  padding: 10px 25px; /* Proper sizing */
+  width: auto; /* Removes excessive width */
+}
+
+.btn-danger:hover {
+  background-color: #dc2626; /* Darker red on hover */
+}
+
+/* Add Subject Button */
+.btn-success {
+  background-color: #10b981;
+  color: #ffffff;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #059669;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .col {
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .col {
+    max-width: 100%;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+/* Modal Input Fields */
+input[type="text"],
+textarea {
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #3b82f6; /* Blue border on focus */
+}
+
+/* Cards for subjects */
+.card {
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.card-header {
+  background-color: #3b82f6;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.card-body {
+  padding-top: 10px;
+}
+
+.card-body .btn {
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 25px;
+}
+
+.card-body .btn-success {
+  background-color: #10b981;
+  color: #fff;
+  border: none;
+}
+
+.card-body .btn-success:hover {
+  background-color: #059669;
+}

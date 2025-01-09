@@ -1,0 +1,230 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa; /* Very light gray */
+  padding: 0px;
+  margin: 0;
+  color: #333; /* Dark text for better readability */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  color: #444; /* Slightly darker text for titles */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #e0f7fa; /* Light cyan */
+  border-radius: 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #4caf50; /* Soft green */
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 1rem;
+  padding: 10px;
+  color: #4caf50; /* Soft green */
+}
+
+.nav-link:hover {
+  background-color: #c8e6c9; /* Light green hover */
+  border-radius: 5px;
+}
+
+/* Card */
+.card {
+  border: 1px solid #e0e0e0; /* Light gray border */
+  border-radius: 8px;
+  background-color: #ffffff; /* White background */
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow */
+}
+
+.card-header {
+  background-color: #c8e6c9; /* Light green background */
+  color: #4caf50; /* Soft green text */
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header .btn {
+  background-color: #4caf50; /* Slightly darker green */
+  color: white;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border: none;
+}
+
+.card-header .btn:hover {
+  background-color: #81c784; /* Darker green on hover */
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th {
+  background-color: #e0f7fa; /* Light cyan */
+  color: #4caf50; /* Soft green */
+  text-align: center;
+  padding: 8px;
+}
+
+td {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #e0e0e0; /* Light gray border */
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #fafafa; /* Very light gray background */
+}
+
+table tbody tr:hover {
+  background-color: #f1f1f1; /* Subtle hover effect */
+}
+
+table a {
+  text-decoration: none;
+}
+
+/* Button Styles */
+.btn {
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success {
+  background-color: #a5d6a7; /* Light green */
+  color: white;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #81c784; /* Slightly darker green */
+}
+
+.btn-warning {
+  background-color: #fff176; /* Soft yellow */
+  color: #333;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #ffee58; /* Slightly darker yellow */
+}
+
+.btn-danger {
+  background-color: #f44336; /* Soft red */
+  color: white;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #d32f2f; /* Slightly darker red */
+}
+
+/* Accordion */
+.accordion-button {
+  background-color: #f1f1f1; /* Very light gray */
+  color: #4caf50; /* Soft green */
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: #c8e6c9; /* Light green hover */
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #c8e6c9; /* Light green when open */
+}
+
+.accordion-body {
+  padding: 15px;
+  background-color: #fafafa; /* Light gray */
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* White background for modals */
+}
+
+.modal-header {
+  background-color: #e0f7fa; /* Light cyan */
+  color: #4caf50; /* Soft green */
+  font-weight: 600;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer {
+  background-color: #f1f1f1; /* Very light gray */
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Input & Textarea Styles */
+input[type="text"],
+input[type="number"],
+textarea {
+  border-radius: 5px;
+  border: 1px solid #e0e0e0; /* Light gray border */
+  padding: 8px;
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #4caf50; /* Soft green focus */
+  outline: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .chart-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chart {
+    width: 90%;
+  }
+}

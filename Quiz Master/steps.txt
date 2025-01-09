@@ -1,0 +1,34 @@
+Step (i) create virtual enviroment to install flask not directly in system but in virtual
+enviroment.
+command: python -m venv venv
+
+
+Step (ii) activate virtual enviroment 
+command: venv\Scripts\activate
+
+
+Step (iii) install Flask and flask-sqlalchemy
+command: pip install flask flask-sqlalchemy
+
+
+List down installations:  
+command: pip freeze > requirements.txt
+
+//data base
+//in terminal
+>>>Python
+>>>from backend.models import db
+>>>from app import *
+>>>db.create_all()
+
+//creating database user
+>>> from backend.models import db
+>>> from app import *
+>>> db.create_all()
+>>> u1=user_info(email="admin@gmail.com",qualification="admin",name="admin",password="12345", role=0)
+>>> print(u1)
+<User_Info (transient 2187599690784)>
+>>> db.session.add(u1)
+>>> db.session.commit()
+
+
