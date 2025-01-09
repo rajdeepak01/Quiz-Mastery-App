@@ -98,7 +98,9 @@ def add_chapter():
 
 @app.route('/delete_chapter/<int:chapter_id>', methods=['POST'])
 def delete_chapter(chapter_id):
-    chapter = AddChapter.query.get_or_404(chapter_id)  
+    chapter = AddChapter.query.get_or_404(chapter_id)
+    Question.query.filter_by(chapter_id=chapter_id).delete()
+    db.session.commit()  
     db.session.delete(chapter)
     db.session.commit()
     return redirect(url_for('admin_dashboard'))
